@@ -1,8 +1,91 @@
-.App {
-  text-align: center;
-  font-size: 22px;
+*:focus {
+outline: none;
 }
 
-button {
+.input_wrapper {
+  background-color: rgb(227, 227, 227);
+  display: grid;
+  grid-template-columns: 400px;
+  justify-content: center;
+  width: 600px;
+  padding: 2rem 0;
+  margin: 2rem auto;
+
+  & p {
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+  }
+}
+
+.input {
+  width: 24.5rem;
+  font-size: 18px;
+}
+
+.submit, .reset {
+  font-size: 18px;
+  font-weight: 700;
   color: white;
+  background-color: rgb(100, 100, 110);
+}
+
+.submit, .input, .reset {
+  width: 25rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  border: transparent;
+}
+
+.reset {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.podatci_wrapper {
+  display: block;
+  width: 600px;
+  margin: 3rem auto;
+  border: 1px solid black;
+  padding: 2rem;
+
+  & span {
+    font-weight:700;
+  }
+
+  & ul {
+
+    padding-inline-start: 0;
+  }
+
+  & li {
+    list-style-type: none;
+    padding: 5px;
+    border: 0.5px solid lightgray;
+  }
+}
+
+.logo_ime {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 100px;
+  align-items: center;
+
+  & h2 {
+    font-size: 80px;
+    font-weight: 400;
+  }
+}
+
+.avatar {
+  width: 200px;
+  margin-left: -40px;
+  z-index: -2;
+}
+  
+.ucitavanje {
+  font-size: 35px;
+  margin: 0 auto;
+  text-align: center;
 }

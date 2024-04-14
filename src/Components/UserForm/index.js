@@ -10,15 +10,19 @@ function UserForm({ onSubmit }) {
   };
 
   return (
+    <div className='input_wrapper'>
+<p>Upišite GitHub username:</p>
     <form onSubmit={handleSubmit}>
-      <input
+      <input className='input'
         type="text"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
-        placeholder="Enter GitHub username"
+        placeholder="npr. facebook"
       />
-      <button type="submit">Submit</button>
+      <button className='submit' type="submit">Preuzmi</button>
     </form>
+
+    </div>
   );
 }
 

@@ -29,7 +29,7 @@ function App() {
       setUserData(formattedUserData);
       setLoading(false);
     } catch (error) {
-      setError('Error fetching user data. Please try again.');
+      setError('Greška prilikom dohvaćanja podataka. Pokušajte ponovo.');
       setLoading(false);
     }
   };
@@ -41,8 +41,8 @@ function App() {
 
   return (
     <div className="App">
-      {loading && <p>Loading...</p>}
-      {error && <p>{error}</p>}
+      {loading && <p className='ucitavanje'>Učitavanje...</p>}
+      {error && <p className='ucitavanje'>{error}</p>}
       {!userData ? (
         <UserForm onSubmit={handleUserData} />
       ) : (
